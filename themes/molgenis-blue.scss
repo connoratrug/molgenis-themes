@@ -1,0 +1,25 @@
+// Use molgenis base style
+@import "bootstrap-molgenis-pre-theme";
+
+// Set the theme style
+$main-green: #5dffac;
+$sub-green: #00BD55;
+$main-blue: #017FFD;
+$sub-blue: #005EC4;
+$red: #F36969;
+$light-gray: #fafafa;
+$dark: #353535;
+$white: #FFFFFF;
+$light: #FFFFFF;
+$light-gray: #fafafa;
+$black: #000;
+
+$primary: $main-blue;
+$secondary: $sub-blue;
+$success: $sub-green;
+$danger: $red;
+$light: $light;
+$dark: $dark;
+
+// Make use of the theme settings
+@import "bootstrap-molgenis-post-theme";

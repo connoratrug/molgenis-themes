@@ -1,0 +1,30 @@
+{
+  "name": "molgenis-theme",
+  "version": "1.0.0",
+  "description": "Package togit remote add origin git@github.com:connoratrug/molgenis-themes.git",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "css",
+    "demo"
+  ],
+  "scripts": {
+    "build": "yarn run sass-compile && yarn run css-minify",
+    "sass-compile": "node-sass-chokidar themes/ -o css/ --recursive",
+    "css-minify": "foreach -i \"./css/*.min.css\" -g \"./css/*.css\" -x \"cleancss -O2 #{path} -o #{dir}/#{name}.min.css\" --no-c"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "foreach-cli": "^1.8.1",
+    "jquery": "1.9.1",
+    "node-sass-chokidar": "^1.5.0",
+    "popper.js": "^1.16.1"
+  }
+}

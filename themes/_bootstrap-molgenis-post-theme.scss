@@ -1,0 +1,23 @@
+// Body
+$body-bg: $light-gray;
+
+// Table
+$table-bg: $white;
+
+// Border radius
+$border-radius: 0px;
+$btn-border-radius-sm: 0px;
+$btn-border-radius-lg: 0px;
+
+// Navbar
+$navbar-light-color: $main-blue;
+$navbar-light-active-color: $black;
+$navbar-light-hover-color: rgba($navbar-light-active-color, .9);
+
+.navbar {
+  font-weight: 600;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+// Include all of Bootstrap, it uses the theme data as set above
+@import "node_modules/bootstrap/scss/bootstrap";
